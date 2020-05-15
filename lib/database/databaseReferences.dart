@@ -7,7 +7,7 @@ class DatabaseReferences {
 
   DatabaseReferences() {
     firestore = Firestore.instance;
-    posts = firestore.collection('posts');
+    posts = firestore.collection('restaurants');
     blogs = firestore.collection('blogs');
     users = firestore.collection('users');
     category = firestore.collection('categories');

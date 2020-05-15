@@ -32,7 +32,8 @@ class RoutesState extends State<Routes> {
               d['birthday'] == null ||
               d['location'] == null ||
               d['bio'] == null) {
-            isNewUser = true;
+            // isNewUser = true;
+            isNewUser = false;
           } else {
             isNewUser = false;
           }

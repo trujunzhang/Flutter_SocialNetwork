@@ -97,7 +97,7 @@ class _HomeTabState extends State<HomeTab> {
         setState(() {
           query = databaseReference.DatabaseReferences()
               .posts
-              .where("visibleTo", arrayContains: currentUser.uid)
+              // .where("visibleTo", arrayContains: currentUser.uid)
               .orderBy('createdAt', descending: true)
               .snapshots();
         });
